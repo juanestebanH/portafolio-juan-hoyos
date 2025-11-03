@@ -1,16 +1,30 @@
-# React + Vite
+# 🌐 Portafolio Web - Juan Esteban Hoyos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio personal, desarrollado para mostrar mis proyectos, habilidades y experiencia en el área del desarrollo web y de software.  
+Mi objetivo es tener un espacio profesional donde pueda compartir mi trabajo y facilitar el contacto con posibles colaboradores o empleadores.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## React Compiler
+- **React.js** - Framework principal para la interfaz
+- **Tailwind CSS** - Estilos modernos y responsivos
+- **JavaScript (ES6+)** - Lógica de componentes e interactividad
+- **EmailJS** - Envío de correos desde el formulario de contacto
+- **HTML5 / CSS3** - Estructura base del proyecto
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 💡 Características principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Sección **"Sobre mí"** con información personal y habilidades técnicas
+- Listado de **proyectos** con descripción y enlaces
+- **Formulario de contacto** funcional con envío directo a mi correo
+- Diseño **responsive** y moderno adaptable a dispositivos móviles
+- Interfaz construida con un enfoque **comic divertido**
+
+---
+
+## 🌍 Enlace al proyecto
+
+🔗 [Ver portafolio en línea]("")
