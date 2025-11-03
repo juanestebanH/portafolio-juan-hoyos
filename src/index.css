@@ -1,68 +1,149 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import 'tailwindcss';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer theme {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    /* Paleta de colores base - estilo Cartoon Network oscuro */
+    --cn-black: 0 0% 8%; /* Negro profundo */
+    --cn-dark-gray: 0 0% 15%; /* Gris oscuro */
+    --cn-gray: 0 0% 30%; /* Gris medio */
+    --cn-light-gray: 0 0% 85%; /* Gris claro */
+    --cn-white: 0 0% 98%; /* Blanco casi puro */
+
+    /* Colores de acento */
+    --cn-electric-blue: 210 100% 60%; /* Azul eléctrico brillante */
+    --cn-deep-red: 0 70% 45%; /* Rojo intenso */
+    --cn-turquoise: 175 60% 50%; /* Turquesa fresco */
+    --cn-deep-purple: 270 50% 40%; /* Morado profundo */
+
+    /* Variables principales para usar en Tailwind (modo oscuro) */
+    --background: var(--cn-black);
+    --foreground: var(--cn-white);
+    --card: var(--cn-dark-gray);
+    --card-foreground: var(--cn-white);
+    --primary: var(--cn-electric-blue);
+    --primary-foreground: var(--cn-white);
+    --secondary: var(--cn-turquoise);
+    --accent: var(--cn-deep-purple);
+    --muted: var(--cn-gray);
+    --border: var(--cn-light-gray);
+    --input: var(--cn-gray);
+    --ring: var(--cn-electric-blue);
   }
-  a:hover {
-    color: #747bff;
+}
+
+/* ===========================================================
+   CAPA BASE (BASE)
+   Se aplican estilos globales a elementos HTML básicos
+   como body, h1, p, etc.
+   =========================================================== */
+@layer base {
+  /* Estilo general del body */
+  body {
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive, system-ui, sans-serif;
   }
-  button {
-    background-color: #f9f9f9;
+
+  /* Títulos principales con tipografía exagerada tipo caricatura */
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  /* Texto normal */
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  /* Adaptaciones responsivas para pantallas pequeñas */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* ===========================================================
+   PATRONES VISUALES (Cartoon Network)
+   Fondos con cuadrícula o líneas diagonales suaves.
+   =========================================================== */
+.cn-pattern-grid {
+  background-image: linear-gradient(hsl(var(--cn-gray)) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--cn-gray)) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.1; /* hace que el patrón sea sutil */
+}
+
+.cn-pattern-diagonal {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 20px,
+    hsl(var(--cn-gray)) 20px,
+    hsl(var(--cn-gray)) 21px
+  );
+  opacity: 0.05;
+}
+
+/* ===========================================================
+   ESTILOS DE BORDES (tipo caricatura grueso)
+   =========================================================== */
+.cn-border-thick {
+  border: 4px solid hsl(var(--cn-black));
+  box-shadow: 4px 4px 0 hsl(var(--cn-black)),
+    -4px -4px 0 hsl(var(--cn-black)) inset;
+}
+
+.cn-border-accent {
+  border: 4px solid hsl(var(--primary));
+  box-shadow: 4px 4px 0 hsl(var(--primary) / 0.3);
+}
+
+/* ===========================================================
+   COMPORTAMIENTO GLOBAL
+   =========================================================== */
+
+/* Suaviza el desplazamiento al hacer clic en enlaces con anclas */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Personalización de la barra de desplazamiento (scrollbar) */
+::-webkit-scrollbar {
+  width: 12px; /* grosor */
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--cn-dark-gray)); /* color del riel */
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary)); /* color del scroll */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--secondary)); /* cambia al pasar el mouse */
 }

@@ -1,0 +1,15 @@
+<!-- guarda esto como public/favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Fondo redondeado -->
+  <rect width="64" height="64" rx="10" ry="10" fill="#000000"/>
+  
+  <!-- Letras tipo burbuja -->
+  <text x="50%" y="52%" font-family="Arial Black, sans-serif" font-size="34"
+        font-weight="900" text-anchor="middle"
+        fill="#007BFF" stroke="#ffffff" stroke-width="3" style="paint-order:stroke">
+    JH
+  </text>
+  
+  <!-- Brillo en la esquina para dar efecto “cartoon” -->
+  <circle cx="50" cy="14" r="5" fill="#ffffff" opacity="0.85"/>
+</svg>
