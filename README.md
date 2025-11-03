@@ -27,4 +27,4 @@ Mi objetivo es tener un espacio profesional donde pueda compartir mi trabajo y f
 
 ## 🌍 Enlace al proyecto
 
-🔗 [Ver portafolio en línea]("https://portafolio-juan-hoyos.onrender.com")
+🔗 [Ver portafolio]("https://portafolio-juan-hoyos.onrender.com")
