@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700;900&display=swap');
 
 @layer theme {
   :root {
@@ -39,7 +40,7 @@
 @layer base {
   /* Estilo general del body */
   body {
-    font-family: 'Comic Neue', 'Comic Sans MS', cursive, system-ui, sans-serif;
+    font-family: 'Comic Neue', 'Comic Sans MS', system-ui, sans-serif;
   }
 
   /* Títulos principales con tipografía exagerada tipo caricatura */
