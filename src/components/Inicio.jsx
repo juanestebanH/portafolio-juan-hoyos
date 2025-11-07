@@ -110,13 +110,13 @@ function Inicio() {
         >
           <a
             href="https://www.linkedin.com/in/juan-esteban-hoyos-0b60912b4/"
-            target="_black"
+            target="_blank"
             className="group flex gap-2 bg-[hsl(var(--primary))] text-[hsl(var(--cn-white))] px-8 py-4 border-4 border-[hsl(var(--cn-black))] shadow-[4px_4px_0_hsl(var(--cn-black))] hover:shadow-[6px_6px_0_hsl(var(--cn-black))] hover:translate-x-0.5 hover:translate-y-0.5 transition-all duration-200"
           >
             <Linkedin /> Linkedin
           </a>
           <a
-            href="/public/cv Juan Hoyos.pdf"
+            href="/cv_JuanHoyos.pdf"
             download="CV_JuanHoyos.pdf"
             className="group bg-transparent text-[hsl(var(--cn-white))] px-8 py-4 border-4 border-[hsl(var(--cn-white))] shadow-[4px_4px_0_hsl(var(--cn-white))] hover:shadow-[6px_6px_0_hsl(var(--cn-white))] hover:translate-x-0.5 hover:translate-y-0.5 transition-all duration-200"
           >
