@@ -1,18 +1,20 @@
 import { motion } from 'framer-motion';
-import { div, h1 } from 'framer-motion/client';
+import { div, h1, i } from 'framer-motion/client';
 import { ExternalLink, Github } from 'lucide-react';
+import ecommercerenta from '../assets/ecommercerenta.png';
 
 function Proyectos() {
   const projects = [
-    //   {
-    //     title: 'E-Commerce Platform',
-    //     description:
-    //       'Plataforma de comercio electrónico completa con pasarela de pagos y gestión de inventario.',
-    //     image:
-    //       'https://images.unsplash.com/photo-1546900703-cf06143d1239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGluZ3xlbnwxfHx8fDE3NjA2NzY4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    //     tags: ['React', 'Node.js', 'MongoDB'],
-    //     color: 'hsl(var(--primary))',
-    //   },
+    {
+      title: 'E-Commerce Renta de Carros',
+      description:
+        'E-commerce de renta de autos con búsqueda por categorías, reservas en tiempo real y panel administrativo de flota.',
+      image: ecommercerenta,
+      tags: ['React', 'Node.js', 'Supabase', 'Tailwind CSS'],
+      color: 'hsl(var(--primary))',
+      demo: 'https://ecommerce-renta-de-carros-1.onrender.com/',
+      code: 'https://github.com/juanestebanH/Ecommerce-renta-de-carros',
+    },
   ];
   return (
     <section
@@ -56,8 +58,8 @@ function Proyectos() {
               >
                 <div className="bg-[hsl(var(--cn-white))] border-[5px] border-[hsl(var(--cn-black))] shadow-[6px_6px_0_hsl(var(--cn-black))] overflow-hidden group-hover:shadow-[8px_8px_0_hsl(var(--cn-black))] group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-200 h-full flex flex-col">
                   {/* Project image */}
-                  <div className="relative h-48 overflow-hidden border-b-[5px] border-[hsl(var(--cn-black))]">
-                    <ImageWithFallback
+                  <div className="relative h-58 overflow-hidden border-b-[5px] border-[hsl(var(--cn-black))]">
+                    <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -73,7 +75,7 @@ function Proyectos() {
                     <h3 className="text-[hsl(var(--cn-black))] mb-3">
                       {project.title}
                     </h3>
-                    <p className="text-[hsl(var(--cn-gray))] mb-4 flex-1">
+                    <p className="text-[hsl(var(--cn-gray))] mb-4 flex-1 ">
                       {project.description}
                     </p>
 
@@ -91,14 +93,22 @@ function Proyectos() {
 
                     {/* Action buttons */}
                     <div className="flex gap-3">
-                      <button className="flex-1 bg-[hsl(var(--primary))] text-[hsl(var(--cn-white))] py-3 border-3 border-[hsl(var(--cn-black))] hover:bg-[hsl(var(--secondary))] transition-colors duration-200 flex items-center justify-center gap-2">
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        className="flex-1 bg-[hsl(var(--primary))] text-[hsl(var(--cn-white))] py-2 border-3 border-[hsl(var(--cn-black))] hover:bg-[hsl(var(--secondary))] transition-colors duration-200 flex items-center justify-center gap-2"
+                      >
                         <ExternalLink size={18} strokeWidth={3} />
                         Demo
-                      </button>
-                      <button className="flex-1 bg-[hsl(var(--cn-dark-gray))] text-[hsl(var(--cn-white))] py-3 border-3 border-[hsl(var(--cn-black))] hover:bg-[hsl(var(--cn-gray))] transition-colors duration-200 flex items-center justify-center gap-2">
+                      </a>
+                      <a
+                        href={project.code}
+                        target="_blank"
+                        className="flex-1 bg-[hsl(var(--cn-dark-gray))] text-[hsl(var(--cn-white))] py-2 border-3 border-[hsl(var(--cn-black))] hover:bg-[hsl(var(--cn-gray))] transition-colors duration-200 flex items-center justify-center gap-2"
+                      >
                         <Github size={18} strokeWidth={3} />
                         Código
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>

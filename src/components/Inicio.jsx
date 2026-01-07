@@ -116,7 +116,7 @@ function Inicio() {
             <Linkedin /> Linkedin
           </a>
           <a
-            href="/cv_JuanHoyos.pdf"
+            href="/juanhoyoshojadevida.pdf"
             download="CV_JuanHoyos.pdf"
             className="group bg-transparent text-[hsl(var(--cn-white))] px-8 py-4 border-4 border-[hsl(var(--cn-white))] shadow-[4px_4px_0_hsl(var(--cn-white))] hover:shadow-[6px_6px_0_hsl(var(--cn-white))] hover:translate-x-0.5 hover:translate-y-0.5 transition-all duration-200"
           >

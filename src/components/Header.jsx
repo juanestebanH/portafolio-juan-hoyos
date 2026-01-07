@@ -40,7 +40,7 @@ function Header() {
             {/* Logo */}
             <a href="#inicio" className="text-[hsl(var(--cn-white))] z-50">
               <div className="bg-[hsl(var(--primary))] px-4 py-2 border-3 border-[hsl(var(--cn-black))] shadow-[3px_3px_0_hsl(var(--cn-black))] hover:shadow-[4px_4px_0_hsl(var(--cn-black))]  transition-all duration-200">
-                PORTFOLIO
+                PORTAFOLIO
               </div>
             </a>
 
