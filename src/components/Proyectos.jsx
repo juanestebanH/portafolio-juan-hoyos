@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { div, h1, i } from 'framer-motion/client';
 import { ExternalLink, Github } from 'lucide-react';
 import ecommercerenta from '../assets/ecommercerenta.png';
+import webip from '../assets/webip.png';
 
 function Proyectos() {
   const projects = [
@@ -14,6 +15,17 @@ function Proyectos() {
       color: 'hsl(var(--primary))',
       demo: 'https://ecommerce-renta-de-carros-1.onrender.com/',
       code: 'https://github.com/juanestebanH/Ecommerce-renta-de-carros',
+    },
+
+    {
+      title: 'IP Address Tracker',
+      description:
+        'Proyecto de Frontend Mentor que permite buscar direcciones IP o dominios, mostrando su ubicación en tiempo real en un mapa interactivo.',
+      image: webip,
+      tags: ['Html', 'Css', 'JavaScript', 'Leaflet'],
+      color: 'hsl(var(--cn-turquoise))',
+      demo: 'https://ip-ubicacion-uy7f.onrender.com/',
+      code: 'https://github.com/juanestebanH/ip_ubicacion',
     },
   ];
   return (
