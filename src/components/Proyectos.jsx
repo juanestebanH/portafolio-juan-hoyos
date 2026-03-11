@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
-import { div, h1, i } from 'framer-motion/client';
+import { div, h1, i, title } from 'framer-motion/client';
 import { ExternalLink, Github } from 'lucide-react';
 import ecommercerenta from '../assets/ecommercerenta.png';
 import webip from '../assets/webip.png';
+import architec from '../assets/architec.png';
 
 function Proyectos() {
   const projects = [
     {
       title: 'E-Commerce Renta de Carros',
       description:
-        'E-commerce de renta de autos con búsqueda por categorías, reservas en tiempo real y panel administrativo de flota.',
+        'Plataforma de renta de autos con reservas en tiempo real y panel administrativo',
       image: ecommercerenta,
       tags: ['React', 'Node.js', 'Supabase', 'Tailwind CSS'],
       color: 'hsl(var(--primary))',
@@ -20,12 +21,22 @@ function Proyectos() {
     {
       title: 'IP Address Tracker',
       description:
-        'Proyecto de Frontend Mentor que permite buscar direcciones IP o dominios, mostrando su ubicación en tiempo real en un mapa interactivo.',
+        'Buscador de direcciones IP que muestra su ubicación en un mapa interactivo.',
       image: webip,
       tags: ['Html', 'Css', 'JavaScript', 'Leaflet'],
       color: 'hsl(var(--cn-turquoise))',
       demo: 'https://ip-ubicacion-uy7f.onrender.com/',
       code: 'https://github.com/juanestebanH/ip_ubicacion',
+    },
+    {
+      title: 'Architec Ia',
+      description:
+        'Plataforma que sugiere arquitecturas de software según las necesidades del proyecto.',
+      image: architec,
+      tags: ['React', 'Node.js', 'Higgins Face', 'Tailwind CSS'],
+      color: 'hsl(var(--cn-deep-purple))',
+      demo: 'https://architec-ia-1.onrender.com/',
+      code: 'https://github.com/juanestebanH/Architec-ia',
     },
   ];
   return (
